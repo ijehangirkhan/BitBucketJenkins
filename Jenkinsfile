@@ -27,11 +27,11 @@ pipeline {
        post { 
         always { 
             sh 'cd ..'
-            sh 'rm -r ${BITBUCKET_REPO_NAME}'
-            sh 'rm -r chef-repo'
-            sh 'rm -r changes.txt'
-            sh 'rm -r cookbookchange.txt'
-            sh 'rm -r README.md'
+            sh 'rm -rf ${BITBUCKET_REPO_NAME}'
+            sh 'rm -rf chef-repo'
+            sh 'rm -rf changes.txt'
+            sh 'rm -rf cookbookchange.txt'
+            sh 'rm -rf README.md'
             }
         }
 
